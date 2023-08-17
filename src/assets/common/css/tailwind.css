@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@layer base {
+    body { }
+
+    h1 { font-size: 4.5rem; margin-bottom: 0.5rem; margin-top: 0; letter-spacing: -1.5; line-height: 98px; font-weight: 700; color: #161d24; }
+    h2 { font-size: 3.75rem; margin-bottom: 0.5rem; margin-top: 0; letter-spacing: -1; line-height: 84px; font-weight: 700; color: #161d24; }
+    h3 { font-size: 3rem; margin-bottom: 0.5rem; margin-top: 0; letter-spacing: 0; line-height: 98px; font-weight: 800; color: #161d24; }
+    h4 { font-size: 2.375rem; margin-bottom: 0.5rem; margin-top: 0; letter-spacing: 0; line-height: 98px; font-weight: 800; color: #161d24; }
+    h5 { font-size: 1.5rem; margin-bottom: 0.5rem; margin-top: 0; letter-spacing: 0; line-height: 36px; font-weight: 800; color: #161d24; }
+    h6 { font-size: 1.25rem; margin-bottom: 0.5rem; margin-top: 0; letter-spacing: 0; line-height: 30px; font-weight: 800; color: #161d24; }
+    .subtitle { font-size: 1.125rem; line-height: 27px; letter-spacing: 0; margin-bottom: 0.5rem; margin-top: 0; font-weight: 700; color: #1dbadb; text-transform: uppercase; }
+    .subtitle2 { font-size: 1rem; line-height: 27px; letter-spacing: 0; margin-bottom: 0; margin-top: 0; font-weight: 700; color: #1dbadb; text-transform: uppercase; }
+    .bodytext { font-size: 1.125rem; line-height: 27px; letter-spacing: 0; margin-bottom: 0.5rem; margin-top: 0; font-weight: 400; color: #484e53; }
+    .bodytext2 { font-size: 1rem; line-height: 27px; letter-spacing: 0; margin-bottom: 0.5rem; margin-top: 0; font-weight: 400; color: #484e53; }
+}
+
+
+@layer components {
+    /*header*/
+    .header { @apply fixed flex justify-between items-center bg-white border-b w-full px-14 h-[6.25rem]; z-index: 9999; }
+    .header .logo { }
+    .header .menu { @apply flex gap-16 }
+    .header .menu > li { @apply text-lg font-extrabold hover:text-primary }
+    .header .language { @apply flex flex-row items-center gap-0.5 }
+    .header .language > p { @apply text-sm }
+
+    /*main visual*/
+    .main { @apply relative w-full h-[54.375rem] }
+    .main_visual { @apply bg-cover bg-no-repeat bg-center w-full h-fit; background-image: url('@/components/images/main_visual.jpg') }
+    .main_visual2 { @apply bg-cover bg-no-repeat bg-center w-full h-fit; background-image: url('@/components/images/main_visual2.jpg') }
+    .main_text{ @apply container mx-auto text-left text-white break-keep relative leading-normal top-[60%] mb-0 }
+
+    /*main content*/
+    .main_section1 { @apply container mx-auto pt-24 }
+    .main_section1 .title  { @apply text-center mb-0 }
+
+
+
+}
